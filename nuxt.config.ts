@@ -14,6 +14,6 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/home': { redirect: '/' },
-    '/static': { prerender: true }
+    '/ssg': { prerender: true }
   }
 })
