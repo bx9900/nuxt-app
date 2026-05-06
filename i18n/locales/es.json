@@ -2,6 +2,7 @@
   "nav": {
     "home": "Inicio",
     "about": "Acerca de",
+    "stream": "Stream",
     "appName": "Nuxt App"
   },
   "home": {
@@ -28,6 +29,12 @@
     "nitro": "Motor de servidor Nitro",
     "vue": "Vue 3 con Composition API",
     "routing": "Enrutamiento basado en archivos"
+  },
+  "stream": {
+    "title": "Demo de Streaming",
+    "description": "Esta página demuestra el streaming desde el servidor. Haz clic en el botón para recibir fragmentos del servidor en tiempo real.",
+    "start": "Iniciar Stream",
+    "loading": "Transmitiendo..."
   },
   "footer": {
     "builtWith": "Hecho con Nuxt"
