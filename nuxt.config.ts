@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default'
   },
   routeRules: {
-    '/home': { redirect: '/' }
+    '/home': { redirect: '/' },
+    '/static': { prerender: true }
   }
 })

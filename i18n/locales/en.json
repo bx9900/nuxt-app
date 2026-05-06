@@ -4,6 +4,7 @@
     "about": "About",
     "stream": "Stream",
     "htmlStream": "HTML Stream",
+    "static": "Static",
     "appName": "Nuxt App"
   },
   "home": {
@@ -41,6 +42,16 @@
     "title": "HTML Page Streaming",
     "description": "This page demonstrates SSR streaming. The page shell is sent immediately, and async components stream in as they resolve on the server.",
     "hint": "Disable JavaScript to see pure server streaming — each block arrives progressively without client-side hydration."
+  },
+  "static": {
+    "title": "Static Page (SSG)",
+    "description": "This page is pre-rendered at build time. It's served as a static HTML file with no server-side rendering on each request.",
+    "howItWorks": "How SSG Works",
+    "point1": "Page HTML is generated once during the build step",
+    "point2": "Served directly from CDN/static hosting — no server needed",
+    "point3": "Client-side hydration adds interactivity after load",
+    "generatedAt": "Pre-rendered at",
+    "currentTime": "Client time"
   },
   "footer": {
     "builtWith": "Built with Nuxt"
