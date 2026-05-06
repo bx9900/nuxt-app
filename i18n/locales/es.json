@@ -3,6 +3,7 @@
     "home": "Inicio",
     "about": "Acerca de",
     "stream": "Stream",
+    "htmlStream": "HTML Stream",
     "appName": "Nuxt App"
   },
   "home": {
@@ -35,6 +36,11 @@
     "description": "Esta página demuestra el streaming desde el servidor. Haz clic en el botón para recibir fragmentos del servidor en tiempo real.",
     "start": "Iniciar Stream",
     "loading": "Transmitiendo..."
+  },
+  "htmlStream": {
+    "title": "Streaming de Página HTML",
+    "description": "Esta página demuestra el streaming SSR. El esqueleto de la página se envía inmediatamente y los componentes asíncronos se transmiten a medida que se resuelven en el servidor.",
+    "hint": "Desactiva JavaScript para ver el streaming puro del servidor — cada bloque llega progresivamente sin hidratación del lado del cliente."
   },
   "footer": {
     "builtWith": "Hecho con Nuxt"

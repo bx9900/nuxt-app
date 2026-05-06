@@ -8,6 +8,7 @@
           <NuxtLink :to="localePath('/')">{{ $t('nav.home') }}</NuxtLink>
           <NuxtLink :to="localePath('/about')">{{ $t('nav.about') }}</NuxtLink>
           <NuxtLink :to="localePath('/stream')">{{ $t('nav.stream') }}</NuxtLink>
+          <NuxtLink :to="localePath('/html-stream')">{{ $t('nav.htmlStream') }}</NuxtLink>
         </div>
         <div class="lang-switcher">
           <a
