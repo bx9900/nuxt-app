@@ -1,21 +1,21 @@
 <template>
   <div class="home">
     <section class="hero">
-      <h1>Welcome</h1>
-      <p class="subtitle">A simple Nuxt application with server-side rendering and custom middleware.</p>
+      <h1>{{ $t('home.welcome') }}</h1>
+      <p class="subtitle">{{ $t('home.subtitle') }}</p>
     </section>
     <section class="features">
       <div class="card">
-        <h3>SSR</h3>
-        <p>Pages are rendered on the server for fast initial loads and SEO.</p>
+        <h3>{{ $t('home.ssr.title') }}</h3>
+        <p>{{ $t('home.ssr.description') }}</p>
       </div>
       <div class="card">
-        <h3>Middleware</h3>
-        <p>Custom headers injected on every response via server middleware.</p>
+        <h3>{{ $t('home.middleware.title') }}</h3>
+        <p>{{ $t('home.middleware.description') }}</p>
       </div>
       <div class="card">
-        <h3>File Routing</h3>
-        <p>Pages are automatically mapped to routes from the file system.</p>
+        <h3>{{ $t('home.fileRouting.title') }}</h3>
+        <p>{{ $t('home.fileRouting.description') }}</p>
       </div>
     </section>
   </div>

@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "appName": "Nuxt App"
+  },
+  "home": {
+    "welcome": "Bienvenido",
+    "subtitle": "Una aplicación Nuxt sencilla con renderizado del lado del servidor y middleware personalizado.",
+    "ssr": {
+      "title": "SSR",
+      "description": "Las páginas se renderizan en el servidor para cargas iniciales rápidas y SEO."
+    },
+    "middleware": {
+      "title": "Middleware",
+      "description": "Cabeceras personalizadas inyectadas en cada respuesta mediante middleware del servidor."
+    },
+    "fileRouting": {
+      "title": "Enrutamiento por archivos",
+      "description": "Las páginas se asignan automáticamente a rutas desde el sistema de archivos."
+    }
+  },
+  "about": {
+    "title": "Acerca de",
+    "description": "Esta es una aplicación Nuxt que demuestra el renderizado del lado del servidor con middleware personalizado que inyecta un {header} en cada respuesta.",
+    "techStack": "Tecnologías",
+    "nuxt": "Nuxt 3",
+    "nitro": "Motor de servidor Nitro",
+    "vue": "Vue 3 con Composition API",
+    "routing": "Enrutamiento basado en archivos"
+  },
+  "footer": {
+    "builtWith": "Hecho con Nuxt"
+  }
+}

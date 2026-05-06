@@ -1,17 +1,16 @@
 <template>
   <div class="about">
-    <h1>About</h1>
+    <h1>{{ $t('about.title') }}</h1>
     <p>
-      This is a Nuxt application demonstrating server-side rendering with custom
-      server middleware that injects an <code>X-Custom-Header</code> on every response.
+      {{ $t('about.description', { header: 'X-Custom-Header' }) }}
     </p>
     <div class="tech-stack">
-      <h2>Tech Stack</h2>
+      <h2>{{ $t('about.techStack') }}</h2>
       <ul>
-        <li>Nuxt 3</li>
-        <li>Nitro server engine</li>
-        <li>Vue 3 with Composition API</li>
-        <li>File-based routing</li>
+        <li>{{ $t('about.nuxt') }}</li>
+        <li>{{ $t('about.nitro') }}</li>
+        <li>{{ $t('about.vue') }}</li>
+        <li>{{ $t('about.routing') }}</li>
       </ul>
     </div>
   </div>
@@ -27,13 +26,6 @@
   color: #495057;
   max-width: 600px;
   margin-bottom: 2rem;
-}
-
-code {
-  background: #e9ecef;
-  padding: 0.15rem 0.4rem;
-  border-radius: 4px;
-  font-size: 0.9em;
 }
 
 .tech-stack {

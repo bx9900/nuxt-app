@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "appName": "Nuxt App"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "subtitle": "A simple Nuxt application with server-side rendering and custom middleware.",
+    "ssr": {
+      "title": "SSR",
+      "description": "Pages are rendered on the server for fast initial loads and SEO."
+    },
+    "middleware": {
+      "title": "Middleware",
+      "description": "Custom headers injected on every response via server middleware."
+    },
+    "fileRouting": {
+      "title": "File Routing",
+      "description": "Pages are automatically mapped to routes from the file system."
+    }
+  },
+  "about": {
+    "title": "About",
+    "description": "This is a Nuxt application demonstrating server-side rendering with custom server middleware that injects an {header} on every response.",
+    "techStack": "Tech Stack",
+    "nuxt": "Nuxt 3",
+    "nitro": "Nitro server engine",
+    "vue": "Vue 3 with Composition API",
+    "routing": "File-based routing"
+  },
+  "footer": {
+    "builtWith": "Built with Nuxt"
+  }
+}

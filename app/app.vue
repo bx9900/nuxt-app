@@ -3,10 +3,21 @@
     <NuxtRouteAnnouncer />
     <header>
       <nav>
-        <NuxtLink to="/" class="logo">Nuxt App</NuxtLink>
+        <NuxtLink :to="localePath('/')" class="logo">{{ $t('nav.appName') }}</NuxtLink>
         <div class="nav-links">
-          <NuxtLink to="/">Home</NuxtLink>
-          <NuxtLink to="/about">About</NuxtLink>
+          <NuxtLink :to="localePath('/')">{{ $t('nav.home') }}</NuxtLink>
+          <NuxtLink :to="localePath('/about')">{{ $t('nav.about') }}</NuxtLink>
+        </div>
+        <div class="lang-switcher">
+          <a
+            v-for="locale in availableLocales"
+            :key="locale.code"
+            href="#"
+            :class="{ active: locale.code === currentLocale }"
+            @click.prevent="setLocale(locale.code)"
+          >
+            {{ locale.name }}
+          </a>
         </div>
       </nav>
     </header>
@@ -14,10 +25,18 @@
       <NuxtPage />
     </main>
     <footer>
-      <p>Built with Nuxt</p>
+      <p>{{ $t('footer.builtWith') }}</p>
     </footer>
   </div>
 </template>
+
+<script setup>
+const { locale, locales, setLocale } = useI18n()
+const localePath = useLocalePath()
+
+const currentLocale = locale
+const availableLocales = computed(() => locales.value)
+</script>
 
 <style>
 * {
@@ -81,6 +100,31 @@ nav {
 .nav-links a.router-link-active {
   color: #00dc82;
   border-bottom-color: #00dc82;
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.lang-switcher a {
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.lang-switcher a:hover {
+  background: #e9ecef;
+  color: #1a1a2e;
+}
+
+.lang-switcher a.active {
+  background: #00dc82;
+  color: #fff;
 }
 
 main {
